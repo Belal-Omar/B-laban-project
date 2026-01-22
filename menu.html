@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Menu</title>
+  <link rel="stylesheet" href="menu.css">
+  <link rel="stylesheet" href="popups.css">
+</head>
+<body>
+  <nav class="navbar" >
+  <a href="menu.html"><img src="Photos/بلبن.png" alt="b-laban" id="b-laban-logo"></a>
+  <a href="cart.html" target="_blank"><img src="Photos/cart.png"  alt="cart" id="cart-icon"></a>
+  </nav>
+  <div class="menu-container">
+    <div class="menu-item">
+      <img src="Photos/mambo.jpeg" alt="mambo">
+      <h2><em>strawberry mambo</em></h2>
+      <p>strawberry mambo with toppings</p>
+      <button class="btn" onclick="openPopup('popup1')">View More</button>
+    </div>
+    <div class="menu-item">
+      <img src="Photos/dubai.jpeg" alt="Item 2">
+      <h2>habba dubai</h2>
+      <p>habba dubai with toppings</p>
+      <button class="btn" onclick="openPopup('popup2')">View More</button>
+    </div>
+    <div class="menu-item">
+      <img src="Photos/crepe.jpeg" alt="Dubai Crepe" id="crepe">
+      <h2>Dubai Crepe</h2>
+      <p>Dubai Crepe with toppings</p>
+      <button class="btn" onclick="openPopup('popup3')">View More</button>
+    </div>
+    <div class="menu-item">
+      <img src="Photos/qashtota.webp" alt="Qashtouta">
+      <h2>Qashtouta</h2>
+      <p>Classic Qashtouta with toppings</p>
+      <button class="btn" onclick="openPopup('popup4')">View More</button>
+    </div>
+    <div class="menu-item">
+      <img src="Photos/WhatsApp Image 2025-04-18 at 16.24.21_2bc5f9af.jpg" alt="Koshari ">
+      <h2>sweet Koshari </h2>
+      <p>sweet Koshari  with toppings</p>
+      <button class="btn" onclick="openPopup('popup5')">View More</button>
+    </div>
+    <div class="menu-item">
+      <img src="Photos/rice.jpeg" alt="Plain Rice Pudding">
+      <h2>Plain Rice Pudding</h2>
+      <p>Classic Rice Pudding with toppings</p>
+      <button class="btn" onclick="openPopup('popup6')">View More</button>
+    </div>
+    <div class="menu-item">
+      <img src="Photos/LOQA.jpeg" alt="LOQA">
+      <h2>LOQA</h2>
+      <p>LOQA with toppings</p>
+      <button class="btn" onclick="openPopup('popup7')">View More</button>
+    </div>
+    <div class="menu-item">
+      <img src="Photos/farawlita dubai.jpeg" alt="Farawlita dubai">
+      <h2>Farawlita dubai</h2>
+      <p>Farawlita dubai with toppings</p>
+      <button class="btn" onclick="openPopup('popup8')">View More</button>
+    </div>
+    <div class="menu-item">
+      <img src="Photos/bomb.jpeg" alt="Cheese Bomb">
+      <h2>Cheese Bomb</h2>
+      <p>Cheese Bomb with toppings</p>
+      <button class="btn" onclick="openPopup('popup9')">View More</button>
+    </div>
+    <div class="menu-item">
+      <img src="Photos/Mini Kabsa.jpeg" alt="Mini Kabsa">
+      <h2>Mini Kabsa</h2>
+      <p>Mini Kabsa with toppings</p>
+      <button class="btn" onclick="openPopup('popup10')">View More</button>
+    </div>
+  </div>
+
+  <div class="overlay" onclick="closePopup()">
+    
+  </div>
+
+  <div id="popups">
+    <div class="popup" id="popup1">
+      <h3>Customize your Mambo</h3>
+      <h3 style="color: red;">*PRICE : 50 $ </h3>
+      <form onsubmit="submitOrder(event, 'Mambo',50)"> 
+          <label><input type="radio" name="topping1" value="Pistachio"> Pistachio</label>
+          <label><input type="radio" name="topping1" value="Kinder"> Kinder</label>
+          <label><input type="radio" name="topping1" value="Chocolate"> Chocolate</label>
+          <label><input type="radio" name="topping1" value="Mango"> Mango Instead of Strawberry</label>
+          <button type="submit" class="btn">Order Now</button>
+          <button type="button" class="btn" onclick="closePopup()">Cancel</button>
+      </form>
+  </div>
+    <div class="popup" id="popup2">
+        <h3>Customize Habba Dubai</h3>
+        <h3 style="color: red;">*PRICE : 45 $ </h3>
+        <form onsubmit="submitOrder(event, 'habba',45)">
+          <label><input type="radio" name="topping2" value="nuts"> Nuts</label>
+          <label><input type="radio" name="topping2" value="Kinder"> Kinder</label>
+          <label><input type="radio" name="topping2" value="chocolate"> Chocolate</label>
+          <button type="submit" class="btn">Order Now</button>
+          <button type="button" class="btn" onclick="closePopup()">Cancel</button>
+        </form>
+      </div>
+      <div class="popup" id="popup3">
+        <h3>Customize crepe dubai</h3>
+        <h3 style="color: red;">*PRICE : 55 $</h3>
+        <form onsubmit="submitOrder(event, 'crepe dubai',55)">
+          <label><input type="radio" name="topping3" value="Nutella"> Nutella</label>
+          <label><input type="radio" name="topping3" value="nuts"> Nuts</label>
+          <label><input type="radio" name="topping3" value="Basbousa"> Basbousa</label>
+          <label><input type="radio" name="topping3" value="Qeshta"> Qeshta</label>
+          <label><input type="radio" name="topping3" value="Louts Powder"> Louts Powder</label>
+          <label><input type="radio" name="topping3" value="Louts sauce "> Louts sauce </label>
+          <label><input type="radio" name="topping3" value="Honey"> Honey</label>
+          <button type="submit" class="btn">Order Now</button>
+          <button type="button" class="btn" onclick="closePopup()">Cancel</button>
+        </form>
+      </div>
+      <div class="popup" id="popup4">
+        <h3>Customize Qashtouta</h3>
+        <h3 style="color: red;">*PRICE : 60 $</h3>
+        <form onsubmit="submitOrder(event, 'Qashtouta',60)">
+          <label><input type="radio" name="topping4" value="Lotus pudding rice"> Lotus Pudding Rice</label>
+          <label><input type="radio" name="topping4" value="lotus dish"> Lotus Dish</label>
+          <label><input type="radio" name="topping4" value="Caramel"> Caramel</label>
+          <label><input type="radio" name="topping4" value="mango plate"> Mango Plate</label>
+          <label><input type="radio" name="topping4" value="super luxe"> Super Luxe</label>
+          <label><input type="radio" name="topping4" value="Rice pudding with nuts "> Rice Pudding With Nuts </label>
+          <label><input type="radio" name="topping4" value="rice pudding mango"> Rice Pudding Mango</label>
+          <label><input type="radio" name="topping4" value="nuts plate"> Nuts plate</label>
+          <button type="submit" class="btn">Order Now</button>
+          <button type="button" class="btn" onclick="closePopup()">Cancel</button>
+        </form>
+      </div>
+      <div class="popup" id="popup5">
+        <h3>Customize sweet Koshari </h3>
+        <h3 style="color: red;">*PRICE : 50 $</h3>
+        <form onsubmit="submitOrder(event, 'Koshari',50)">
+          <label><input type="radio" name="topping5" value=" Pistachio">  Pistachio</label>
+          <label><input type="radio" name="topping5" value="Pistachio Lotus"> Pistachio Lotus</label>
+          <label><input type="radio" name="topping5" value=" Oreo Nutella"> Oreo Nutella</label>
+          <label><input type="radio" name="topping5" value=" Kinder ">  Kinder </label>
+          <label><input type="radio" name="topping5" value=" Nutella">  Nutella</label>
+          <label><input type="radio" name="topping5" value="Mango "> Mango </label>
+          <label><input type="radio" name="topping5" value=" Lotus">  Lotus</label>
+          <label><input type="radio" name="topping5" value="Lotus & pistachio"> Lotus & pistachio</label>
+          <button type="submit" class="btn">Order Now</button>
+          <button type="button" class="btn" onclick="closePopup()">Cancel</button>
+        </form>
+      </div>
+      <div class="popup" id="popup6">
+        <h3>Customize Rice Pudding </h3>
+        <h3 style="color: red;">*PRICE : 25 $</h3>
+        <form onsubmit="submitOrder(event, 'Rice Pudding',25)">
+          <label><input type="radio" name="topping6" value=" Qeshta And Nuts">  Qeshta And Nuts</label>
+          <label><input type="radio" name="topping6" value="Nuts"> Nuts</label>
+          <label><input type="radio" name="topping6" value="CHOKLALITA RICE"> CHOKLALITA RICE</label>
+          <label><input type="radio" name="topping6" value=" Belgian Lotus Pudding Rice ">Belgian Lotus Pudding Rice </label>
+          <button type="submit" class="btn">Order Now</button>
+          <button type="button" class="btn" onclick="closePopup()">Cancel</button>
+        </form>
+      </div>
+      <div class="popup" id="popup7">
+        <h3>Customize your LOQA </h3>
+        <h3 style="color: red;">*PRICE : 70 $</h3>
+        <form onsubmit="submitOrder(event, 'LOQA',70)">
+          <label><input type="radio" name="topping7" value=" Louts"> Louts</label>
+          <label><input type="radio" name="topping7" value="Pistachio"> Pistachio</label>
+          <label><input type="radio" name="topping7" value=" Mango">  Mango</label>
+          <label><input type="radio" name="topping7" value=" Kinder ">Kinder </label>
+          <label><input type="radio" name="topping7" value="Chocolate">Chocolate</label>
+          <button type="submit" class="btn">Order Now</button>
+          <button type="button" class="btn" onclick="closePopup()">Cancel</button>
+        </form>
+      </div>
+      <div class="popup" id="popup8">
+        <h3>Customize Farawlita dubai</h3>
+        <h3 style="color: red;">*PRICE : 90 $</h3>
+        <form onsubmit="submitOrder(event, 'Farawlita dubai',90)">
+          <label><input type="radio" name="topping8" value="Nutella"> Nutella</label>
+          <label><input type="radio" name="topping8" value="nuts"> Nuts</label>
+          <label><input type="radio" name="topping8" value="Basbousa"> Basbousa</label>
+          <label><input type="radio" name="topping8" value="Qeshta"> Qeshta</label>
+          <label><input type="radio" name="topping8" value="Louts Powder"> Louts Powder</label>
+          <label><input type="radio" name="topping8" value="Louts sauce "> Louts sauce </label>
+          <label><input type="radio" name="topping8" value="Honey"> Honey</label>
+          <button type="submit" class="btn">Order Now</button>
+          <button type="button" class="btn" onclick="closePopup()">Cancel</button>
+        </form>
+      </div>
+
+      <div class="popup" id="popup9">
+        <h3>Customize Cheese Bomb</h3>
+        <h3 style="color: red;">*PRICE : 75 $</h3>
+        <form onsubmit="submitOrder(event, 'Cheese Bomb',)">
+          <label><input type="radio" name="topping9" value="Nutella"> Nutella</label>
+          <label><input type="radio" name="topping9" value="nuts"> Nuts</label>
+          <label><input type="radio" name="topping9" value="Basbousa"> Basbousa</label>
+          <label><input type="radio" name="topping9" value="Qeshta"> Qeshta</label>
+          <label><input type="radio" name="topping9" value="Louts Powder"> Louts Powder</label>
+          <label><input type="radio" name="topping9" value="Louts sauce "> Louts sauce </label>
+          <label><input type="radio" name="topping9" value="Honey"> Honey</label>
+          <button type="submit" class="btn">Order Now</button>
+          <button type="button" class="btn" onclick="closePopup()">Cancel</button>
+        </form>
+      </div>
+      <div class="popup" id="popup10">
+        <h3>Customize Mini Kabsa</h3>
+        <h3 style="color: red;">*PRICE : 80 $</h3>
+        <form onsubmit="submitOrder(event, 'Mini Kabsa',80)">
+          <label><input type="radio" name="topping10" value="Nutella"> Nutella</label>
+          <label><input type="radio" name="topping10" value="nuts"> Nuts</label>
+          <label><input type="radio" name="topping10" value="Basbousa"> Basbousa</label>
+          <label><input type="radio" name="topping10" value="Qeshta"> Qeshta</label>
+          <label><input type="radio" name="topping10" value="Louts Powder"> Louts Powder</label>
+          <label><input type="radio" name="topping10" value="Louts sauce "> Louts sauce </label>
+          <label><input type="radio" name="topping10" value="Honey"> Honey</label>
+          <button type="submit" class="btn">Order Now</button>
+          <button type="button" class="btn" onclick="closePopup()">Cancel</button>
+        </form>
+      </div>
+  </div>
+
+  <script src="menu.js"></script>
+</body>
+</html>

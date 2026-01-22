@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Your Cart</title>
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="menu.html"><img src="Photos/بلبن.png" alt="b-laban" id="b-laban-logo"></a>
+    </nav>
+
+    <table border="2" class="cart-table">
+        <tr>
+            <th>Item</th>
+            <th>Topping</th>
+            <th>Quantity</th>
+            <th>Total</th>
+        </tr>
+        <tbody id="cart-items">
+        </tbody>
+        <tr>
+            <td colspan="3" class="total">Total:</td>
+            <td id="total-price">0 </td>
+        </tr>   
+    </table><br><br>
+    <div class="cart-actions">
+        <button class="btn" onclick="clearCart()">Clear Cart</button>
+        <button class="btn" onclick="continueShopping()">Continue Shopping</button>
+        <button class="btn" onclick="checkout()">Checkout</button>
+       
+    </div>
+
+    <script src="cart.js"></script>
+</body>
+</html>
